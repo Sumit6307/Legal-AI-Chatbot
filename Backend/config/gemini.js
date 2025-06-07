@@ -1,5 +1,9 @@
 const axios = require('axios');
 
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const geminiAPI = async (message) => {
   try {
     const response = await axios.post(

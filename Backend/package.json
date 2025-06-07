@@ -17,6 +17,7 @@
     "express": "^5.1.0",
     "firebase-admin": "^13.4.0",
     "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
     "razorpay": "^2.9.6"
   }
 }

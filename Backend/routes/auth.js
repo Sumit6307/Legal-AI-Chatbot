@@ -2,6 +2,10 @@ const express = require('express');
 const User = require('../models/User');
 const router = express.Router();
 
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 router.post('/profile', async (req, res) => {
   const { uid, name, email } = req.body;
   try {

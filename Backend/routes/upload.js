@@ -3,6 +3,11 @@ const multer = require('multer');
 const { geminiAPI } = require('../config/gemini');
 const router = express.Router();
 
+
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const upload = multer({ dest: 'uploads/' });
 
 router.post('/', upload.single('file'), async (req, res) => {

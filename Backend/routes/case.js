@@ -2,6 +2,10 @@ const express = require('express');
 const Case = require('../models/Case');
 const router = express.Router();
 
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 router.post('/', async (req, res) => {
   const { uid, name, status } = req.body;
   try {
